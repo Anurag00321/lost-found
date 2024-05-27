@@ -20,7 +20,6 @@ const {data: session} = useSession()
                 <Link href='listings/create' className='hover:text-white'>List an Item</Link>
                 <Link href='/feed' className='hover:text-white'>Feed</Link>
                 <Link href='/myListings' className='hover:text-white'>My Listings</Link>
-                <Link href='/messages' className='hover:text-white'>Messages</Link>
                 
                 <button className='bg-blue-500 hover:bg-blue-400 p-2 rounded-lg border border-black hover:scale-110' onClick={signOut}>Sign Out</button>
                 <Image alt={session.user.name} src={session.user.image} width={50} height={40} className='rounded-full'/>
