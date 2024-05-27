@@ -19,7 +19,7 @@ const getListingById = async (id) => {
     }
 }
 
-async function ListingCard(id) {
+async function ListingCard() {
 
     const session = await getServerSession(authOptions)
     const id = params.id
