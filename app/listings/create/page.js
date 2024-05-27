@@ -1,6 +1,6 @@
 import CreateListingForm from '@/app/components/CreateListing'
 import { getServerSession } from 'next-auth/next' 
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
+import { authOptions } from '@/app/lib/authOptions'
 import { redirect } from 'next/navigation'
 
 export default async function CreateListing(){

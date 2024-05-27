@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import nextImg from '@/public/next.svg'
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../api/auth/[...nextauth]/route';
+import { authOptions } from '../lib/authOptions';
 import { redirect } from 'next/navigation';
 import Link from 'next/link'
 import DeleteButton from '@/app/components/DeleteButton'

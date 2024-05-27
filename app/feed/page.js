@@ -1,7 +1,7 @@
 import React from 'react'
 import ListedItemCard from '../components/ListedItemCard'
 import { getServerSession } from 'next-auth/next' 
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
+import { authOptions } from '../lib/authOptions'
 import { redirect } from 'next/navigation'
 
 

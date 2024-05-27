@@ -4,7 +4,7 @@ import ReportLost from '../public/assets/report_lost.png'
 import ReportFound from '../public/assets/report_found.png'
 import Link from 'next/link';
 import { getServerSession } from 'next-auth';
-import { authOptions } from './api/auth/[...nextauth]/route';
+import { authOptions } from './lib/authOptions';
 
 export default async function Home() {
   const session = await getServerSession(authOptions)
