@@ -10,7 +10,7 @@ import { authOptions } from '../lib/authOptions'
 
 const getListings = async () => {
     try {
-        const res = await fetch('http:localhost:3000/api/listing', {
+        const res = await fetch('https://lost-found-gray.vercel.app/api/listing', {
             cache: 'no-store'
         })
         if (res.ok) {

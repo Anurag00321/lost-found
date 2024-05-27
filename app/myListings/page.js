@@ -9,7 +9,7 @@ import DeleteButton from '@/app/components/DeleteButton'
 
 const getMyListings = async (email) => {
     try {
-        const res = await fetch(`http://localhost:3000/api/authors/${email}`, {
+        const res = await fetch(`https://lost-found-gray.vercel.app/api/authors/${email}`, {
             cache: 'no-store'
         });
         if (res.ok) {

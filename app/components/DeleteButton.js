@@ -3,7 +3,7 @@ import { useRouter } from 'next/navigation'
 
 export default function DeleteButton({ id }) {
     const deleteImage = async (publicId) =>{
-const res = await fetch('http://localhost:3000/api/removeImage', {
+const res = await fetch('https://lost-found-gray.vercel.app/api/removeImage', {
     method: "POST",
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify({publicId}),
