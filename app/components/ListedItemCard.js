@@ -29,7 +29,7 @@ export default async function ListedItemCard() {
 
     return (
         <>
-            {listings?.map((l) => {
+            {listings.map((l) => {
                 const dateObject = new Date(l.createdAt);
                 const formattedDate = dateObject.toLocaleDateString();
 
