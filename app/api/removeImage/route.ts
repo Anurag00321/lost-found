@@ -7,7 +7,7 @@ cloudinary.v2.config({
     api_secret: process.env.CLOUDINARY_API_SECRET
 })
 
-const removeImage = async (publicId) => {
+const removeImage = async (publicId: string) => {
     try {
         const res = await cloudinary.v2.uploader.destroy(publicId)
         console.log("image removed")
