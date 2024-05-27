@@ -34,7 +34,7 @@ export default async function ListedItemCard() {
                 const formattedDate = dateObject.toLocaleDateString();
 
                 return (
-                    <div className='border border-black h-96 w-1/4 flex flex-col rounded-lg mt-12 p-2 gap-2 mb-4' key={l.id}>
+                    <div className='border border-black h-96 w-1/4 flex flex-col rounded-lg mt-12 p-2 gap-2 mb-4 text-wrap' key={l.id}>
                         <div className='border-b border-black items-center justify-center flex h-1/2'>
                             <div className="h-40 w-full relative" > {l.imageUrl ?
 
