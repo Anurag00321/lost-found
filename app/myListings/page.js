@@ -41,7 +41,7 @@ async function MyListings() {
     return (
         <>
             <div className='flex gap-10 flex-row flex-wrap justify-center'>
-                {listings.map((l) => {
+                {listings?.map((l) => {
                     const dateObject = new Date(l.createdAt);
                     const formattedDate = dateObject.toLocaleDateString();
 
