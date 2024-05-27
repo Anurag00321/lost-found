@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import nextImg from '@/public/next.svg'
 import { getServerSession } from 'next-auth';
-import { authOptions } from '../lib/authOptions';
+import { authOptions } from '../../lib/authOptions';
 import { redirect } from 'next/navigation';
 import Link from 'next/link'
 
