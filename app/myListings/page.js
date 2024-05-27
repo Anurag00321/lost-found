@@ -41,7 +41,7 @@ async function MyListings() {
     return (
         <>
             <div className='flex gap-10 flex-row flex-wrap justify-center'>
-                {listings?.map((l) => {
+                {listings && listings.length >0 ? (listings?.map((l) => {
                     const dateObject = new Date(l.createdAt);
                     const formattedDate = dateObject.toLocaleDateString();
 
@@ -68,7 +68,10 @@ async function MyListings() {
                             </div>
                         </div>
                     )
-                })}
+                })): ( <div className='text-3xl text-center'>
+                No listings yet. 
+                <Link href='/listings/create' className='underline'>Create New</Link>
+            </div>)}
             </div>
         </>
 
