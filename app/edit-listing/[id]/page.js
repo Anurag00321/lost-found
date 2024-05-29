@@ -1,7 +1,7 @@
 import EditListingForm from '../../components/EditListingForm'
 import { getServerSession } from 'next-auth'
 import { useSession } from 'next-auth/react'
-import {authoption} from '../../lib/authOptions'
+import {authOptions} from '../../lib/authOptions'
 
 const getListing = async (id) => {
     try {
