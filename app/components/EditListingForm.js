@@ -72,7 +72,7 @@ initValues();
         }
         
         try {
-            const res = await fetch(`/api/listing/${listing.id}`, {
+            const res = await fetch(`https://lost-found-gray.vercel.app/api/listing/${listing.id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-type': 'application/json'
